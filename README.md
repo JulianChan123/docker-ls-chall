@@ -5,44 +5,30 @@ Integrantes del equipo
 
  - Victor Chan
  - Julian Chan
- - Luis Ku
+ - Luis Ku ( no ayudo )
 
 Documentación del reto de realizar 2 imágenes de Docker y realizar el docker-compose
 
-Cuando se descargue el proyecto lanzamos el comando para compilar y levantar el proyecto:
+Para poder correr el docker es necesario poner docker-compose up -d
+donde -d se usa para que docker funcione en segundo plano
 
 ```shell
-   docker build -t nombre_de_la_imagen .
+   docker-compose up -d
 ```
-
-Después de ejecutar el comando anterior para construir la imagen, ahora tenemos que correr la imagen con el siguiente comando
+para poder cambiarnos de aplicacion se tiene que cambiar de puerto de la siguiente forma
+**localhost: [puerto de proyecto definido]**
 
 para utilizar la aplicación de **weatherApp** utilizamos el puerto **5173**
 
 ```shell
-   docker run -d -p 5173:80 nombre_de_la_imagen
+   localhost:5173
 ```
-
-Una vez corriendo el contenedor podemos revisar que esté arriba con el comando:
+para utilizar la aplicación de **TodoList-simple** utilizamos el puerto **3000**
 
 ```shell
-   docker ps
+    localhost:3000
 ```
 
-Si ahora queremos detener la aplicación, después de ubicarla con el comando "ps", seleccionamos el ID del servicio y lo colocamos con:
+para detener el funcionamiento del docker colocamos el siguiente comando:
 ```shell
-   docker stop id_container
-```
-
-## Docker compose comandos utilizados
-
-Cuando queremos compilar el proyecto con docker compose y el archivo no tiene algun nombre especifico utilizamos:
-
-```shell
-   docker-compose build
-```
-
-Una vez compilado el proyecto, para levantarlo utilizamos:
-
-```shell
-   docker-compose up
+   docker-compose down

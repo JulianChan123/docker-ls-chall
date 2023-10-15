@@ -4,7 +4,7 @@ services:
     ports:
       - 5173:80
   twitter-card:
-    build: ./TwitterCardReact/projects/00-hola-mundo
+    build: ./TodoList-Simple
     ports:
-      - 5172:80
+      - 3000:80
       
