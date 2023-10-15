@@ -1,0 +1,133 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-todo-list{
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-todo-list h2{
+    font-size: 42px;
+    margin: 20px;
+}
+
+.input-btn{
+    display: flex;
+    margin-bottom: 10%;
+}
+.input-btn input{
+    width: 78%;
+    height: 34px;
+    border-radius: none;
+    border-color: #32e7ff;
+    font-size: 19px;
+    padding-left: 17px;
+    border-radius: 10px 0 0px 10px;
+}
+.input-btn button{
+    width: 20%;
+    height: 40px;
+    border-color: #32e7ff;
+    background-color: #32e7ff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+.input-btn button:hover{
+    background-color: #fff;
+    color: #32e7ff;
+    transition: all 0.5s 0s ease;
+}
+.input-btn button:not(:hover){
+    transition: all 0.5s 0s ease;
+}
+.list-tasks{
+    margin-bottom: 11%;
+}
+.list-tasks ul{
+    padding-left: 0;
+    margin: 0 13px;
+}
+.list-tasks li{
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.list-tasks li:first-letter{
+    color: #32e7ff;
+    text-transform: uppercase;
+}
+.list-tasks li span{
+    background-color: #32e7ff;
+    border-radius: 50%;
+    padding: 1px 8px; 
+    color: #fff;
+    cursor: pointer;
+    height: 26px;
+}
+.list-tasks li span:hover{
+    background-color: red;
+}
+
+/*remove all btn*/
+.remove-all{
+    border-radius: none;
+    border-color: #32e7ff;
+    background-color: #32e7ff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 9px 16px;
+
+    border-radius: 10px;
+}
+.remove-all:hover{
+    background-color: #fff;
+    color: #32e7ff;
+    transition: all 0.5s 0s ease;
+}
+.remove-all:not(:hover){
+
+    transition: all 0.5s 0s ease;
+}
+
+/*responsive*/
+@media only screen and (max-width: 768px){
+    .section-todo-list{
+        width: 90%;
+    }
+}
+
+/* validation message */
+.error {
+    color: red;
+    text-align: left;
+    background-color: #ffe5e5;
+    padding: 2px 13px;
+    border: solid 2px red;
+    border-radius: 2px;
+}
+
+p.author {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 7px;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
