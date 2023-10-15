@@ -17,8 +17,10 @@ Cuando se descargue el proyecto lanzamos el comando para compilar y levantar el 
 
 Después de ejecutar el comando anterior para construir la imagen, ahora tenemos que correr la imagen con el siguiente comando
 
+para utilizar la aplicación de **weatherApp** utilizamos el puerto **5173**
+
 ```shell
-   docker run -d -p 8000:8000 nombre_de_la_imagen
+   docker run -d -p 5173:80 nombre_de_la_imagen
 ```
 
 Una vez corriendo el contenedor podemos revisar que esté arriba con el comando:
@@ -44,4 +46,3 @@ Una vez compilado el proyecto, para levantarlo utilizamos:
 
 ```shell
    docker-compose up
-```
