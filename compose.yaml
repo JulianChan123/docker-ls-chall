@@ -3,3 +3,8 @@ services:
     build: ./weatherApp
     ports:
       - 5173:80
+  twitter-card:
+    build: ./TwitterCardReact/projects/00-hola-mundo
+    ports:
+      - 5172:80
+      
